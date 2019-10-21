@@ -1,6 +1,21 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-navigation-drawer app>
+      <drawer></drawer>
+    </v-navigation-drawer>
+    <v-app-bar class="d-block d-sm-block d-md-block d-lg-block d-xl-block" app>
+      <appbar></appbar>
+    </v-app-bar>
+    <v-content>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
+    <v-footer app>
+     <app-footer></app-footer>
+    </v-footer>
+
+    <!--<v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
         <span>梦马</span>
         <span class="font-weight-light">户外</span>
@@ -24,17 +39,20 @@
     </v-app-bar>
     <v-content>
       <HelloWorld/>
-    </v-content>
+    </v-content>-->
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
+import Appbar from "./base/appbar.vue";
+import AppFooter from "./base/appfooter.vue";
+import Drawer from "./base/navigationdrawer.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Appbar,
+    AppFooter,
+    Drawer
   },
   data: () => ({
     //
