@@ -15,6 +15,11 @@ npm run serve
 npm run build
 ```
 
+### Run your tests
+```
+npm run test
+```
+
 ### Lints and fixes files
 ```
 npm run lint
@@ -22,8 +27,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-### 生产环境访问地址
-
-http://49.232.1.130/
