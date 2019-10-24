@@ -21,6 +21,21 @@
       font-size: 24px;
       margin-left: 20px;
       cursor: pointer;
+      display: inline-block;
+      animation: move 2s linear infinite;
+      transform-origin: 50% 70%;
     }
+  }
+}
+
+@keyframes move {
+  10%,20%{
+    -webkit-transform: rotate(-8deg);
+  }
+  5%,15%,25%{
+    -webkit-transform: rotate(8deg);
+  }
+  0%,30%,100%{
+    -webkit-transform: rotate(0deg);
   }
 }
