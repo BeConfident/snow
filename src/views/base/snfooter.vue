@@ -1,19 +1,9 @@
 <template>
   <div class="sn-footer">
-    <ul class="sn-footer__message">
-      <li class="sn-footer__item">
-        <span class="sn-footer__title">微信：</span>
-        <span>test*****</span>
-      </li>
-      <li class="sn-footer__item">
-        <span class="sn-footer__title">联系方式：</span>
-        <span>130****1111</span>
-      </li>
-      <li class="sn-footer__item">
-        <span class="sn-footer__title">地址：</span>
-        <span>XXXXXXXXXXXXXXXXX</span>
-      </li>
-    </ul>
+    <div class="sn-footer__message">
+      <p class="sn-footer__text">Copyright &copy; 2019 Mengma Inc. 保留所有权利。</p>
+      <p class="sn-footer__text">京ICP备17061198号-3</p>
+    </div>
   </div>
 </template>
 <script>
