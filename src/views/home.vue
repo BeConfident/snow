@@ -29,7 +29,7 @@ export default {
   width: 100%;
   height: 100%;
   .sn-main {
-    height: calc(~"100% - 80px");
+    height: calc(~"100% - 50px");
     overflow-y: auto;
   }
 }
