@@ -1,5 +1,7 @@
 # snow
 
+## [设计架构](./doc/STRUC.md)
+
 ## Project setup
 ```
 npm install
@@ -27,3 +29,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
