@@ -7,7 +7,7 @@ import './style/index.less';
 
 Vue.config.productionTip = false;
 
-Vue.use(ViewUI, { transfer: true, size: 'small' });
+Vue.use(ViewUI, { transfer: true});
 
 new Vue({
   router,

@@ -2,7 +2,7 @@
   <div class="sn-home">
     <sn-header></sn-header>
     <div class="sn-main">
-      <sn-content></sn-content>
+      <router-view></router-view>
       <sn-footer></sn-footer>
     </div>
   </div>
@@ -10,16 +10,12 @@
 
 <script>
 import snHeader from './base/snheader.vue';
-
-import snContent from './base/sncontent.vue';
-
 import snFooter from './base/snfooter.vue';
 
 export default {
   name: 'home',
   components: {
     snHeader,
-    snContent,
     snFooter,
   },
 };

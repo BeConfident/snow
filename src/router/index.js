@@ -7,9 +7,20 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    name: 'home',
     component: Home,
-  },
+    children: [
+      {
+        path: "/",
+        name: "content",
+        component: () => import("@/views/index/content.vue")
+      },
+      {
+        path: "/detail",
+        name: "detail",
+        component: () => import("@/views/index/detail.vue")
+      }
+    ]
+  }
 ];
 
 const router = new VueRouter({
