@@ -32,11 +32,7 @@
     <v-content>
       <HelloWorld/>
     </v-content>
-      <v-footer
-              color="primary"
-              app
-      >
-
+      <v-footer color="primary">
           <span class="white--text">Copyright © 2019 Mengma Inc. 保留所有权利。<br/>京ICP备17061198号-3</span>
       </v-footer>
   </v-app>
@@ -47,11 +43,9 @@ import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
-
   components: {
     HelloWorld,
   },
-
   data: () => ({
     //
   }),
