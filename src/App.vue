@@ -10,19 +10,11 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="./assets/logo.png"
           transition="scale-transition"
           width="40"
         />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        梦马户外
       </div>
 
       <v-spacer></v-spacer>
@@ -32,14 +24,21 @@
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">Live</span>
+        <v-icon>mdi-youtube</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-content>
       <HelloWorld/>
     </v-content>
+      <v-footer
+              color="primary"
+              app
+      >
+
+          <span class="white--text">Copyright © 2019 Mengma Inc. 保留所有权利。<br/>京ICP备17061198号-3</span>
+      </v-footer>
   </v-app>
 </template>
 
