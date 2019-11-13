@@ -14,7 +14,7 @@
             <v-btn color="orange" text>
               分享
             </v-btn>
-            <v-btn color="orange" text>
+            <v-btn color="orange" text @click="toDetail(item.index)">
               了解更多
             </v-btn>
           </v-card-actions>
@@ -26,35 +26,52 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'home',
 
-    data: () => ({
-      items: [
-        {
-          src: 'one.jpg',
-          title:'Top 10 Australian beaches',
-          subtitle:'Number 10',
-          text:'Whitsunday Island, Whitsunday Islands',
-        },
-        {
-          src: 'two.jpg',
-          title:'Top 10 Australian beaches',
-          subtitle:'Number 10',
-          text:'Whitsunday Island, Whitsunday Islands',
-        },
-        {
-          src: 'three.jpg',
-          title:'Top 10 Australian beaches',
-          subtitle:'Number 10',
-          text:'Whitsunday Island, Whitsunday Islands',
-        },
-        {
-          src: 'four.jpg',
-          title:'Top 10 Australian beaches',
-          subtitle:'Number 10',
-          text:'Whitsunday Island, Whitsunday Islands',
-        },
-      ]
-    }),
+    data() {
+      return {
+        items: [
+          {
+            index:1,
+            src: 'one.jpg',
+            title:'Top 10 Australian beaches',
+            subtitle:'Number 10',
+            text:'Whitsunday Island, Whitsunday Islands',
+          },
+          {
+            index:2,
+            src: 'two.jpg',
+            title:'Top 10 Australian beaches',
+            subtitle:'Number 10',
+            text:'Whitsunday Island, Whitsunday Islands',
+          },
+          {
+            index:3,
+            src: 'three.jpg',
+            title:'Top 10 Australian beaches',
+            subtitle:'Number 10',
+            text:'Whitsunday Island, Whitsunday Islands',
+          },
+          {
+            index:4,
+            src: 'four.jpg',
+            title:'Top 10 Australian beaches',
+            subtitle:'Number 10',
+            text:'Whitsunday Island, Whitsunday Islands',
+          },
+        ]
+      }
+    },
+    methods: {
+      toDetail(index) {
+        console.info('toDetail');
+        this.$router.push({
+          name: "detail",
+          query:{
+            id:index
+          }
+        });
+      }
+    }
   };
 </script>
