@@ -117,23 +117,23 @@
       return {
         items: [
           {
-            title:'哈尔滨-雪乡',
-            text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+            title:'暗影冲刺',
+            text:'裂魂人盯紧一个敌方单位，开始无视一切物体的冲刺。途中经过的所有敌方单位和目标单位都将受到巨力重击。如果目标单位在到达前死亡了，裂魂人将他的目标改为原路径上最近的一个敌方单位。',
             src:'one.jpg'
           },
           {
-            title:'雪乡-二道白河长白山',
-            text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+            title:'威吓',
+            text:'裂魂人获得移动速度和状态抗性加成，在敌人之间横冲直撞。可以在冲刺期间使用。',
             src:'two.jpg'
           },
           {
-            title:'二道白河长白山-雾凇岛',
-            text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+            title:'巨力重击',
+            text:'攻击时有一定概率眩晕并击退敌方单位。重击的伤害值为移动速度的一定百分比。',
             src:'three.jpg'
           },
           {
-            title:'雾凇岛-雪谷',
-            text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+            title:'幽冥一击',
+            text:'裂魂人遁入幽冥领域，从不幸的目标身旁再次出现，发动当前等级的巨力重击并造成额外伤害。击退距离为平常的两倍。',
             src:'four.jpg'
           }
         ]
