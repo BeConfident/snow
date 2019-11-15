@@ -79,20 +79,20 @@
     <v-row>
       <v-col cols="12">
         <v-toolbar dark color="grey lighten-5">
+
+          <v-btn fab small class="ma-2" color="primary" dark>
+            <v-icon dark top>mdi-face-woman</v-icon>
+          </v-btn>
+
+          <v-btn fab small class="ma-2" color="primary" dark>
+            <v-icon dark top>mdi-store-24-hour</v-icon>
+          </v-btn>
           <v-spacer></v-spacer>
-          <v-btn class="ma-2" color="primary" dark>
-            <v-icon dark left>mdi-face-woman</v-icon>客服
+          <v-btn  rounded outlined min-width="200px" class="ma-2" color="deep-orange darken-3" dark>
+            <v-icon dark top>mdi-hand-heart</v-icon>收藏
           </v-btn>
-
-          <v-btn class="ma-2" color="primary" dark>
-            <v-icon dark left>mdi-store-24-hour</v-icon>店铺
-          </v-btn>
-
-          <v-btn class="ma-2" color="primary" dark>
-            <v-icon dark left>mdi-hand-heart</v-icon>收藏
-          </v-btn>
-          <v-btn class="ma-2" color="primary" dark>
-            <v-icon dark left>mdi-cart</v-icon>拼团
+          <v-btn rounded min-width="200px" class="ma-2" color="deep-orange darken-3" dark>
+            <v-icon dark top>mdi-cart</v-icon>拼团
           </v-btn>
         </v-toolbar>
       </v-col>
