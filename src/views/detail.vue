@@ -35,7 +35,7 @@
           <v-card-text>
             <v-chip-group
                     v-model="selection"
-                    active-class="deep-purple accent-4 white--text"
+                    active-class="blue accent-4 white--text"
                     column
             >
               <v-chip>哈尔滨-雪乡</v-chip>
@@ -65,9 +65,8 @@
           <v-timeline :reverse="reverse" dense>
             <v-timeline-item
                     v-for="item in items" :key="item.index">
-              <span slot="opposite">{{item.title}}</span>
               <v-card class="elevation-2">
-                <v-card-title class="headline">{{item.subtitle}}</v-card-title>
+                <v-card-title class="headline">{{item.title}}</v-card-title>
                 <v-card-text>{{item.text}}</v-card-text>
                 <v-img class="white--text align-end"  :src="item.src" max-height="500"></v-img>
               </v-card>
@@ -114,26 +113,22 @@
       return {
         items: [
           {
-            title:'Tus eu perfecto',
-            subtitle:'Lorem ipsum',
+            title:'哈尔滨-雪乡',
             text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
             src:'one.jpg'
           },
           {
-            title:'Tus eu perfecto',
-            subtitle:'Lorem ipsum',
+            title:'雪乡-二道白河长白山',
             text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
             src:'two.jpg'
           },
           {
-            title:'Tus eu perfecto',
-            subtitle:'Lorem ipsum',
+            title:'二道白河长白山-雾凇岛',
             text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
             src:'three.jpg'
           },
           {
-            title:'Tus eu perfecto',
-            subtitle:'Lorem ipsum',
+            title:'雾凇岛-雪谷',
             text:'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
             src:'four.jpg'
           }
