@@ -95,7 +95,7 @@
           <v-btn  rounded outlined min-width="200px" class="ma-2" color="deep-orange darken-3" dark>
             <v-icon dark top>mdi-hand-heart</v-icon>收藏
           </v-btn>
-          <v-btn rounded min-width="200px" class="ma-2" color="deep-orange darken-3" dark>
+          <v-btn rounded min-width="200px" class="ma-2" color="deep-orange darken-3" dark @click="doPay">
             <v-icon dark top>mdi-cart</v-icon>拼团
           </v-btn>
         </v-toolbar>
@@ -110,11 +110,18 @@
 <script>
   export default {
     name: "detail",
-    created() {
-      console.log(this.$route.query);
+    methods:{
+      doPay(){
+        this.$router.push({
+          name: "pay"
+        });
+      }
     },
     data() {
       return {
+        selection: 1,
+        reverse: false,
+        loading:false,
         items: [
           {
             title:'暗影冲刺',

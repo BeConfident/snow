@@ -64,7 +64,6 @@
     },
     methods: {
       toDetail(index) {
-        console.info('toDetail');
         this.$router.push({
           name: "detail",
           query:{
