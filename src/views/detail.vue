@@ -80,6 +80,10 @@
       <v-col cols="12">
         <v-toolbar dark color="grey lighten-5">
 
+
+          <v-btn  outlined fab small class="ma-2" color="primary" dark>
+            <v-icon dark top>mdi-arrow-left</v-icon>
+          </v-btn>
           <v-btn fab small class="ma-2" color="primary" dark>
             <v-icon dark top>mdi-face-woman</v-icon>
           </v-btn>
