@@ -7,8 +7,12 @@
       </div>
       <v-spacer></v-spacer>
       <v-btn text>
-        <span class="mr-2">直播</span>
         <v-icon>mdi-youtube</v-icon>
+        <span class="mr-1">直播</span>
+      </v-btn>
+      <v-btn text @click="toLogin">
+        <v-icon>mdi-glassdoor</v-icon>
+        <span class="mr-1">登陆</span>
       </v-btn>
     </v-app-bar>
     <v-content>
@@ -23,3 +27,14 @@
   </v-app>
 
 </template>
+<script>
+  export default {
+    methods:{
+      toLogin(){
+        this.$router.push({
+          name: "login",
+        });
+      }
+    }
+  }
+</script>

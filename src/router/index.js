@@ -28,6 +28,11 @@ const routes = [
         path: '/paid',
         name: 'paid',
         component: () => import(/* webpackChunkName: "paid" */ '../views/paid.vue')
+      },
+      {
+        path: '/login',
+        name: 'login',
+        component: () => import(/* webpackChunkName: "login" */ '../views/login.vue')
       }
     ]
   }
