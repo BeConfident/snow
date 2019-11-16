@@ -14,8 +14,11 @@
     <v-content>
       <router-view></router-view>
     </v-content>
-    <v-footer color="primary">
-      <span class="white--text">Copyright © 2019 Mengma Inc. 保留所有权利。<br/>京ICP备17061198号-3</span>
+    <v-footer color="primary" class="font-weight justify-center">
+      <div class="white--text font-weight-light">
+        <p class="text-center" style="margin-bottom: 0">Copyright © 2019 Mengma Inc. 保留所有权利。</p>
+        <p class="text-center" style="margin-bottom: 0">京ICP备17061198号-3</p>
+      </div>
     </v-footer>
   </v-app>
 
