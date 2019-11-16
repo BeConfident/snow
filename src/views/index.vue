@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
+      <div class="d-flex align-center animated delay-1s bounceInLeft font-weight-black">
         <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="../assets/logo.png" transition="scale-transition" width="40"/>
         梦马户外
       </div>
       <v-spacer></v-spacer>
       <v-btn text>
-        <span class="mr-2">Live</span>
+        <span class="mr-2">直播</span>
         <v-icon>mdi-youtube</v-icon>
       </v-btn>
     </v-app-bar>
