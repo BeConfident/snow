@@ -77,18 +77,18 @@
     </v-row>
     <v-card >
     <v-row>
-      <v-col cols="10">
+      <v-col cols="4">
           <v-btn  outlined fab small class="ma-2" color="primary" dark>
             <v-icon dark top>mdi-arrow-left</v-icon>
           </v-btn>
-          <v-btn fab small class="ma-2" color="primary" dark>
+          <v-btn fab small class="ma-2 d-none d-sm-inline-flex" color="primary" dark>
             <v-icon dark top>mdi-face-woman</v-icon>
           </v-btn>
-          <v-btn fab small class="ma-2" color="primary" dark>
+          <v-btn fab small class="ma-2 d-none d-sm-inline-flex" color="primary" dark>
             <v-icon dark top>mdi-store-24-hour</v-icon>
           </v-btn>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="8" class="text-right">
           <v-btn rounded outlined class="ma-2" color="deep-orange darken-3" dark>
             <v-icon dark top>mdi-hand-heart</v-icon>收藏
           </v-btn>
