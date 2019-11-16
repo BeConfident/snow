@@ -72,35 +72,32 @@
               </v-card>
             </v-timeline-item>
           </v-timeline>
-
         </v-card>
       </v-col>
     </v-row>
+    <v-card >
     <v-row>
-      <v-col cols="12">
-        <v-toolbar dark color="grey lighten-5">
-
-
+      <v-col cols="10">
           <v-btn  outlined fab small class="ma-2" color="primary" dark>
             <v-icon dark top>mdi-arrow-left</v-icon>
           </v-btn>
           <v-btn fab small class="ma-2" color="primary" dark>
             <v-icon dark top>mdi-face-woman</v-icon>
           </v-btn>
-
           <v-btn fab small class="ma-2" color="primary" dark>
             <v-icon dark top>mdi-store-24-hour</v-icon>
           </v-btn>
-          <v-spacer></v-spacer>
-          <v-btn  rounded outlined min-width="200px" class="ma-2" color="deep-orange darken-3" dark>
+      </v-col>
+      <v-col cols="2">
+          <v-btn rounded outlined class="ma-2" color="deep-orange darken-3" dark>
             <v-icon dark top>mdi-hand-heart</v-icon>收藏
           </v-btn>
-          <v-btn rounded min-width="200px" class="ma-2" color="deep-orange darken-3" dark @click="doPay">
+          <v-btn rounded class="ma-2" color="deep-orange darken-3" dark @click="doPay">
             <v-icon dark top>mdi-cart</v-icon>拼团
           </v-btn>
-        </v-toolbar>
       </v-col>
     </v-row>
+    </v-card>
   </v-container>
 
 
