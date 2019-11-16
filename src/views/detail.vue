@@ -78,7 +78,7 @@
     <v-card >
     <v-row>
       <v-col cols="4">
-          <v-btn  outlined fab small class="ma-2" color="primary" dark>
+          <v-btn  outlined fab small class="ma-2" color="primary" dark @click="toHome">
             <v-icon dark top>mdi-arrow-left</v-icon>
           </v-btn>
           <v-btn fab small class="ma-2 d-none d-sm-inline-flex" color="primary" dark>
@@ -99,11 +99,7 @@
     </v-row>
     </v-card>
   </v-container>
-
-
 </template>
-
-
 <script>
   export default {
     name: "detail",
@@ -111,6 +107,11 @@
       doPay(){
         this.$router.push({
           name: "pay"
+        });
+      },
+      toHome(){
+        this.$router.push({
+          name: "home"
         });
       }
     },

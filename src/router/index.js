@@ -23,15 +23,20 @@ const routes = [
         path: '/pay',
         name: 'pay',
         component: () => import(/* webpackChunkName: "pay" */ '../views/pay.vue')
+      },
+      {
+        path: '/paid',
+        name: 'paid',
+        component: () => import(/* webpackChunkName: "paid" */ '../views/paid.vue')
       }
     ]
   }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
-})
+});
 
 export default router

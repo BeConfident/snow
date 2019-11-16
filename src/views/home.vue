@@ -11,7 +11,7 @@
             <div>{{item.text}}</div>
           </v-card-text>
           <v-card-actions>
-            <v-btn color="orange" text>
+            <v-btn color="orange" text @click="snackbar=true">
               分享
             </v-btn>
             <v-btn color="orange" text @click="toDetail(item.index)">
@@ -30,6 +30,7 @@
 
     data() {
       return {
+
         items: [
           {
             index:1,
@@ -70,7 +71,7 @@
             id:index
           }
         });
-      }
+      },
     }
   };
 </script>

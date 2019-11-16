@@ -20,7 +20,7 @@
         <v-row>
             <v-col cols="9"></v-col>
             <v-col cols="3">
-                <v-btn bottom right block outlined color="primary">支付</v-btn>
+                <v-btn bottom right block outlined color="primary" @click="paid">支付</v-btn>
             </v-col>
         </v-row>
     </v-container>
@@ -36,5 +36,12 @@
                 },
             ],
         }),
+        methods:{
+            paid(){
+                this.$router.push({
+                    name: "paid"
+                });
+            }
+        }
     }
 </script>

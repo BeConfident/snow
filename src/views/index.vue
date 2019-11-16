@@ -6,7 +6,7 @@
         梦马户外
       </div>
       <v-spacer></v-spacer>
-      <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
+      <v-btn text>
         <span class="mr-2">Live</span>
         <v-icon>mdi-youtube</v-icon>
       </v-btn>
@@ -18,4 +18,5 @@
       <span class="white--text">Copyright © 2019 Mengma Inc. 保留所有权利。<br/>京ICP备17061198号-3</span>
     </v-footer>
   </v-app>
+
 </template>
