@@ -1,6 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary"
+               dark
+               elevate-on-scroll
+               >
       <div class="d-flex align-center animated delay-1s bounceInLeft font-weight-black">
         <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="../assets/logo.png" transition="scale-transition" width="40"/>
         梦马户外

@@ -35,7 +35,7 @@
           <v-card-text>
             <v-chip-group
                     v-model="selection"
-                    active-class="blue accent-4 white--text"
+                    active-class="primary accent-4 white--text"
                     column
             >
               <v-chip>哈尔滨-雪乡</v-chip>

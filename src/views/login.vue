@@ -9,7 +9,7 @@
             </v-col>
             <v-col>
                 <v-hover v-slot:default="{ hover }">
-                    <v-card color="white" class="pa-5 pt-1" :elevation="hover? 12 : 0">
+                    <v-card class="pa-5 pt-1" :elevation="hover? 12 : 0">
                         <v-card-title>手机号登陆</v-card-title>
                         <v-card-actions>
                             <v-text-field label="手机号"  outlined></v-text-field>
