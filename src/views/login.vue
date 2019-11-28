@@ -18,7 +18,7 @@
                             <v-text-field label="密码" outlined type="password"></v-text-field>
                         </v-card-actions>
                         <v-card-actions>
-                            <v-btn large block color="primary">登陆</v-btn>
+                            <v-btn large block color="primary" @click="doLogin">登陆</v-btn>
                         </v-card-actions>
                         <v-card-actions>
                             <v-spacer></v-spacer>
@@ -32,4 +32,17 @@
     </v-img>
 
 </template>
+
+<script>
+    export default {
+        name: "login",
+        methods:{
+            doLogin(){
+                this.$router.push({
+                    name: "home"
+                });
+            },
+        },
+    }
+</script>
 
